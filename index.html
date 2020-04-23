@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Saini</title>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="starwarsintro.css">
+
+    <style>
+        .nes-progress {
+            height: 25px;
+        }
+
+        .list {
+            margin-bottom: 0;
+        }
+
+        .img-hover-zoom {
+            /* [1.1] Set it as per your need */
+            overflow: hidden;
+            /* [1.2] Hide the overflowing of child elements */
+        }
+
+        /* [2] Transition property for smooth transformation of images */
+        .img-hover-zoom img {
+            transition: transform .5s ease;
+        }
+
+        /* [3] Finally, transforming the image when container gets hovered */
+        .img-hover-zoom:hover img {
+            transform: scale(1.5);
+        }
+
+        .mvgithub {
+            width: 100%;
+            height: auto;
+        }
+
+        .titles {
+            width: 100%;
+            height: auto;
+        }
+
+        .series {
+            height: 215px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <nav style='padding: 15px; border-bottom: 3px solid #ccc; '>
+        <div class="container">
+            <div class="row between-xs">
+                <div class="col">
+                    <h2 style="margin-bottom: 0;">
+                        <i class="nes-icon coin"></i>
+                        Mohit Saini
+                    </h2>
+                </div>
+                <div class=" col">
+                    <p>
+                        <a href="#">
+                            <i class="nes-icon github"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="nes-icon medium"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="nes-icon linkedin"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+    <!-- Star Wars -->
+    <div class="star-wars-intro" style="margin-bottom:20px">
+
+        <!-- Blue Intro Text -->
+        <p class="intro-text">
+            Hi... <br>
+            Welcome to my portfolio.
+        </p>
+
+        <!-- Logo Image or Text goes in here -->
+        <h2 class="main-logo">
+            <img src="img/3.png">
+        </h2>
+
+        <!-- All Scrolling Content Goes in here -->
+        <div class="main-content">
+
+            <div class="title-content">
+                <p class="content-header">EPISODES IV-VI<br />A Movie Marathon</p>
+
+                <br>
+
+                <p class="content-body">
+                    After years of galactic silence, civilization is on the brink of a new Star Wars release. Now, with
+                    the Force preparing to awaken, the people of Earth seek solace in films of old. With nowhere to
+                    turn, they gather in great numbers and watch the original trilogy without rest. Three films. 6
+                    hours. 24 minutes. Popcorn. Slushies. Total elation.
+                </p>
+
+                <!-- button or link or whatever -->
+                <a href="./StarScroll.zip" class="space-button">Download The Code Now!</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 30px;">
+        <div class="row center-xs">
+            <div class="row ">
+                <a href="#" style="padding-left: 0.5rem;padding-right: 0.5rem;">
+                    <i class="nes-icon github"></i>
+                </a>
+                <a href="#" style="padding-left: 0.5rem;padding-right: 0.5rem;">
+                    <i class="nes-icon linkedin"></i>
+                </a>
+                <a href="#" style="padding-left: 0.5rem;padding-right: 0.5rem;">
+                    <i class="nes-icon medium"></i>
+                </a>
+                <a href="#" style="padding-left: 0.5rem;padding-right: 0.5rem;">
+                    <i class="nes-icon gmail"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-bottom: 50px;">
+        <div class="row">
+            <div class="col">
+                <i class="nes-ash"></i>
+
+            </div>
+            <div class="col-sm-9 col-xs-12">
+                <!-- Balloon -->
+                <div class="nes-balloon from-left is-small">
+                    <p><i class="nes-icon coin is-small"></i> My resume can be downloaded from <a
+                            href="https://drive.google.com/open?id=1bchcQUT6Yc5s6r8yqiI14ERXMaD-HcVR">here<i
+                                class="nes-icon is-small heart"></i></a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-bottom: 30px;">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs 12">
+                <div class="nes-container with-title is-dark" style="margin-bottom:20px">
+                    <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Education</h3>
+                    <div class="list">
+                        <ul class="nes-list is-circle">
+                            <li style="font-size: small;">
+                                <strong>Ambedkar Institute of Advanced Communication Technologies & Research</strong>
+                            </li>
+                            <li style="font-size: x-small;">Btech CSE (2016 - 2020) | </li>
+                            <li style="font-size: xx-small;">CGPA 7.4</li>
+
+                            <hr>
+
+                            <li style="font-size: small;margin-top:20px">
+                                <strong>Rajkiya Pratibha Vikas Vidyalaya</strong>
+                            </li>
+                            <li style="font-size: x-small;">2015 | Shalimar Bagh</li>
+                            <li style="font-size: xx-small;">12th Percentage: 84</li>
+                            <li style="font-size: xx-small;">10th CGPA: 9.4</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="nes-container with-title is-dark" style="margin-bottom:20px">
+                    <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Skills</h3>
+                    <div style="font-size: small;">
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Python
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            C++
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Deep Learning
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Machine Learning
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Keras
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Tensorflow
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Natural Language Processing
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Computer Vision
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Flask
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Docker
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            MySQL
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            HTML / CSS
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Javascript
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nes-container with-title is-dark">
+                    <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Highlights</h3>
+                    <div style="font-size: small;">
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Mentor at Google Code-In program for Tensorflow
+                        </div>
+                        <div>
+                            <i class="nes-icon is-small coin"></i>
+                            Completed Hacktoberfest 2019
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="nes-container with-title" style="margin-bottom: 50px; margin-top:50px">
+                    <h3 class="title">My Socials</h3>
+                    
+                </div> -->
+            </div>
+            <div class="col-md-8 col-sm-12 col-xs 12">
+                <div class="nes-container with-title">
+                    <h3 class="title" style="font-size: large;"><i class="nes-icon star"></i> Experience</h3>
+                    <div class="row middle-xs">
+                        <div class="col-xs-2">
+                            <img src="img/rsz_yatra.png"
+                                style="width: 100%; height:auto; image-rendering:pixelated; image-rendering: -moz-crisp-edges">
+                        </div>
+                        <div class="col-xs-10">
+                            <p style="margin-bottom: 0;"><span style="font-size: small;">YATRA Online Pvt. Ltd. |
+                                </span><span style="font-size: x-small;"> Data Science Intern</span></p>
+                            <p><span style="font-size: xx-small;">Feb 2020 - Present | Gurugram </span></p>
+                            <p>
+                                <div class="list">
+                                    <ul class="nes-list is-disc" style="font-size: 10px;">
+                                        <li> Development of Deep Learning based intent classifiers.</li>
+                                        <li> Text parsing with Spacy.</li>
+                                        <li> Dockerization of APIs.</li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+                    <div class="row middle-xs">
+                        <div class="col-xs-2">
+                            <img src="img/rsz_1rsz_crio.jpg"
+                                style="width: 100%; height:auto; image-rendering:pixelated; image-rendering: -moz-crisp-edges">
+                        </div>
+                        <div class="col-xs-10">
+                            <p style="margin-bottom: 0;"><span style="font-size: small;">Crio Launch |
+                                </span><span style="font-size: x-small;"> Student Developer</span></p>
+                            <p><span style="font-size: xx-small;">Jan 2020 - Apr 2020 | Virtual </span></p>
+                            <p>
+                                <div class="list">
+                                    <ul class="nes-list is-disc" style="font-size: 10px;">
+                                        <li> Internship like microexperience by working on real software products.</li>
+                                        <li> Development of stock portfolio analysis portfolio using Java, MySQL, OOPs
+                                            and Developer Tools.</li>
+                                        <li> Development of a secure file sharing-solution using Linux, Networking and
+                                            Scripting.</li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row middle-xs">
+                        <div class="col-xs-2">
+                            <img src="img/rsz_rn.png"
+                                style="width: 100%; height:auto; image-rendering:pixelated; image-rendering: -moz-crisp-edges">
+                        </div>
+                        <div class="col-xs-10">
+                            <p style="margin-bottom: 0;"><span style="font-size: small;">The Research Nest |
+                                </span><span style="font-size: x-small;"> AI Blogger</span></p>
+                            <p><span style="font-size: xx-small;">Nov 2019 - Feb 2020 | Virtual </span></p>
+                            <p>
+                                <div class="list">
+                                    <ul class="nes-list is-disc" style="font-size: 10px;">
+                                        <li> Analyze latest research and developments in the field of AI and derive
+                                            useful insights.</li>
+                                        <li> Wrote blogs on topics like object detection, GPT-2 and voice cloning.</li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row middle-xs">
+                        <div class="col-xs-2">
+                            <img src="img/rsz_4metvy.png"
+                                style="width: 100%; height:auto; image-rendering:pixelated; image-rendering: -moz-crisp-edges">
+                        </div>
+                        <div class="col-xs-10">
+                            <p style="margin-bottom: 0;"><span style="font-size: small;">Metvy |
+                                </span><span style="font-size: x-small;"> ML Intern</span></p>
+                            <p><span style="font-size: xx-small;">Nov 2019 - Jan 2020 | Virtual </span></p>
+                            <p>
+                                <div class="list">
+                                    <ul class="nes-list is-disc" style="font-size: 10px;">
+                                        <li> Development and improvement of existing recommendation systems.</li>
+                                        <li> Worked on time series prediction.</li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row middle-xs">
+                        <div class="col-xs-2">
+                            <img src="img/athan.png"
+                                style="width: 100%; height:auto; image-rendering:pixelated; image-rendering: -moz-crisp-edges">
+                        </div>
+                        <div class="col-xs-10">
+                            <p style="margin-bottom: 0;"><span style="font-size: small;">Athancare |
+                                </span><span style="font-size: x-small;"> ML Research Intern</span></p>
+                            <p><span style="font-size: xx-small;">May 2019 - July 2020 | Ghaziabad </span></p>
+                            <p>
+                                <div class="list">
+                                    <ul class="nes-list is-disc" style="font-size: 10px;">
+                                        <li> Worked on the development of handwriting OCR pipeline using siamese
+                                            convolutional neural networks and SigNet paper.</li>
+                                        <li> Implemented research papers of line segmentation.</li>
+                                    </ul>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="row" style="margin-top:30px">
+                        <div class="col-xs-2">
+                            <img src="https://avatars3.githubusercontent.com/u/26195811?s=100&u=1d570d76d553613d016a896e3dbb478152e9a7da&v=4"
+                                style="width: 100%; height:auto; image-rendering:pixelated; image-rendering: -moz-crisp-edges">
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>Old Company Name</h3>
+                            <p>Super Data Scientist</p>
+                            <div>
+                                <a href="#">
+                                    <div class="nes-icon github"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 30px;">
+        <div class="row">
+            <div class="nes-container with-title" style="width: 100%;">
+                <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Activity on GitHub
+                </h3>
+                <div class="container" style="margin-bottom: 20px; width:100%">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 img-hover-zoom">
+                            <a href="https://github.com/sainimohit23/YOLOv3-Counter-Strike-Global-Offensive"><img
+                                    src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/sainimohit23/YOLOv3-Counter-Strike-Global-Offensive.png"
+                                    width="100%"></a>
+
+                        </div>
+                        <div class="col-md-4 col-sm-12 img-hover-zoom">
+                            <a href="https://github.com/sainimohit23/parking-space-detection-system"><img
+                                    src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/sainimohit23/parking-space-detection-system.png"
+                                    width="100%"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 img-hover-zoom">
+                            <a href="https://github.com/sainimohit23/FaceNet-Real-Time-face-recognition"><img
+                                    src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/sainimohit23/FaceNet-Real-Time-face-recognition.png"
+                                    width="100%"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="container" style="width: 100%;">
+                    <div class="nes-container is-dark" style="border: none">
+                        <div class="row middle-xs" style="margin-bottom: 5px;">
+                            <div class="col-md-2 col-xs-12 center-xs">
+                                <i class="nes-octocat animate"></i>
+                            </div>
+                            <div class="col-md-10 col-xs-12">
+                                <img src="https://ghchart.rshah.org/sainimohit23" alt="2016rshah's Github chart"
+                                    class="mvgithub" />
+                            </div>
+                        </div>
+                        <div class="row end-xs" style="margin-bottom: 0px;">
+                            <a style="margin-bottom: 0px; color:white" href="https://github.com/sainimohit23">>View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="img-hover-zoom">
+        <img src="img/rsz_1rsz_crio.jpg" alt="This zooms-in really well and smooth">
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="nes-container with-title is-dark">
+                    <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Favourite Game</h3>
+                    <div class="img-hover-zoom">
+                        <img src="img/csgo.jpg" alt="This zooms-in really well and smooth" class="titles">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="nes-container with-title is-dark">
+                    <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Favourite TV Series</h3>
+                    <div class="row around-xs">
+                        <div class="col-md-3">
+                            <div class="img-hover-zoom">
+                                <img src="img/witcher.jpg" alt="This zooms-in really well and smooth" class="series">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-hover-zoom series">
+                                <img src="img/bb.jpg" alt="This zooms-in really well and smooth" class="series">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-hover-zoom series">
+                                <img src="img/bm.jpg" alt="This zooms-in really well and smooth" class="series">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-hover-zoom series">
+                                <img src="img/pun.jpg" alt="This zooms-in really well and smooth" class="series">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="nes-container with-title is-dark">
+                    <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Hobbies </h3>
+                    <div class="row around-xs">
+                        <!-- <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
