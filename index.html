@@ -50,6 +50,51 @@
             height: 215px;
             width: 100%;
         }
+
+        .scroll-margin {
+            scroll-margin-bottom: 3px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 4px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            margin-top: 2px;
+        }
+
+        /*add a shadow to the scrollbar here*/
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        /*this is the little scrolly dealio in the bar*/
+        ::-webkit-scrollbar-thumb {
+            border-radius: 0px;
+            background: #ffffff;
+            height: 3px;
+        }
+
+        /*nobody needs this little scrollbar corner, I mean really, get rid of it haha*/
+        ::-webkit-scrollbar-corner {
+            display: none;
+            height: 0px;
+            width: 0px;
+        }
+
+
+        .scrollmenu {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.scrollmenu div {
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -450,7 +495,7 @@
         <img src="img/rsz_1rsz_crio.jpg" alt="This zooms-in really well and smooth">
     </div> -->
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="nes-container with-title is-dark">
@@ -463,27 +508,42 @@
 
 
             <div class="col-md-8 col-sm-12 col-xs-12">
+
                 <div class="nes-container with-title is-dark">
-                    <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Favourite TV Series</h3>
-                    <div class="row around-xs">
-                        <div class="col-md-3">
-                            <div class="img-hover-zoom">
-                                <img src="img/witcher.jpg" alt="This zooms-in really well and smooth" class="series">
+                    <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Favourite TV Series
+                    </h3>
+                    <div class="container scrollmenu" style="margin-bottom: 20px; width:100%">
+                        <div class="row around-xs">
+                            <div class="col-md-3">
+                                <div class="img-hover-zoom">
+                                    <img src="img/witcher.jpg" alt="This zooms-in really well and smooth"
+                                        class="series">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="img-hover-zoom series">
-                                <img src="img/bb.jpg" alt="This zooms-in really well and smooth" class="series">
+                            <div class="col-md-3">
+                                <div class="img-hover-zoom series">
+                                    <img src="img/bb.jpg" alt="This zooms-in really well and smooth" class="series">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="img-hover-zoom series">
-                                <img src="img/bm.jpg" alt="This zooms-in really well and smooth" class="series">
+                            <div class="col-md-3">
+                                <div class="img-hover-zoom series">
+                                    <img src="img/bm.jpg" alt="This zooms-in really well and smooth" class="series">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="img-hover-zoom series">
-                                <img src="img/pun.jpg" alt="This zooms-in really well and smooth" class="series">
+                            <div class="col-md-3">
+                                <div class="img-hover-zoom series">
+                                    <img src="img/pun.jpg" alt="This zooms-in really well and smooth" class="series">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="img-hover-zoom series">
+                                    <img src="img/boys.jpg" alt="This zooms-in really well and smooth" class="series">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="img-hover-zoom series">
+                                    <img src="img/dd.jpg" alt="This zooms-in really well and smooth" class="series">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -495,12 +555,13 @@
                     <div class="row around-xs">
                         <!-- <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300"
                             height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-                    </div>
-                </div>
 
-            </div>
-        </div>
     </div>
+    </div>
+
+    </div>
+    </div>
+    </div> -->
 
 </body>
 
