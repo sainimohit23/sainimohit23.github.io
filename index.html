@@ -74,7 +74,7 @@
         /*this is the little scrolly dealio in the bar*/
         ::-webkit-scrollbar-thumb {
             border-radius: 0px;
-            background: #ffffff;
+            background: #333;
             height: 3px;
         }
 
@@ -87,13 +87,17 @@
 
 
         .scrollmenu {
-            background-color: #333;
+            background-color: rgb(255, 255, 255);
             overflow: auto;
             white-space: nowrap;
         }
 
         div.scrollmenu div {
             display: inline-block;
+        }
+
+        .git-pad {
+            padding: 0;
         }
     </style>
 </head>
@@ -443,25 +447,30 @@
 
     <div class="container" style="margin-bottom: 30px;">
         <div class="row">
-            <div class="nes-container with-title" style="width: 100%;">
+            <div class="nes-container with-title " style="width: 100%;">
                 <h3 class="title" style="font-size: medium;"><i class="nes-icon star"></i> Activity on GitHub
                 </h3>
-                <div class="container" style="margin-bottom: 20px; width:100%">
+                <div class="container scrollmenu" style="margin-bottom: 0px; width:100%;">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 img-hover-zoom">
+                        <div class="col-md-4 col-sm-12 img-hover-zoom git-pad">
                             <a href="https://github.com/sainimohit23/YOLOv3-Counter-Strike-Global-Offensive"><img
                                     src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/sainimohit23/YOLOv3-Counter-Strike-Global-Offensive.png"
                                     width="100%"></a>
 
                         </div>
-                        <div class="col-md-4 col-sm-12 img-hover-zoom">
+                        <div class="col-md-4 col-sm-12 img-hover-zoom git-pad">
                             <a href="https://github.com/sainimohit23/parking-space-detection-system"><img
                                     src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/sainimohit23/parking-space-detection-system.png"
                                     width="100%"></a>
                         </div>
-                        <div class="col-md-4 col-sm-12 img-hover-zoom">
+                        <div class="col-md-4 col-sm-12 img-hover-zoom git-pad">
                             <a href="https://github.com/sainimohit23/FaceNet-Real-Time-face-recognition"><img
                                     src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/sainimohit23/FaceNet-Real-Time-face-recognition.png"
+                                    width="100%"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 img-hover-zoom git-pad">
+                            <a href="https://github.com/sainimohit23/Text-Summarization"><img
+                                    src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/sainimohit23/Text-Summarization.png"
                                     width="100%"></a>
                         </div>
                     </div>
@@ -482,7 +491,8 @@
                             </div>
                         </div>
                         <div class="row end-xs" style="margin-bottom: 0px;">
-                            <a style="margin-bottom: 0px; color:white" href="https://github.com/sainimohit23">>View on
+                            <a style="margin-bottom: 0px; color:white; font-size: small"
+                                href="https://github.com/sainimohit23">>View on
                                 GitHub</a>
                         </div>
                     </div>
