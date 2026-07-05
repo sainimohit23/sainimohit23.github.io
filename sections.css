@@ -15,6 +15,9 @@
     --manual-pine-inverse: #8ecab8;
     --manual-plum: #704058;
     --manual-plum-inverse: #d8a5b8;
+    --manual-neon: #b8e84a;
+    --manual-neon-dark: #58720f;
+    --manual-neon-soft: rgba(184, 232, 74, 0.22);
     --manual-blue: #315efb;
     --manual-blue-dark: #142a72;
 }
@@ -173,7 +176,7 @@
 .xp-bar-fill {
     width: 0;
     height: 100%;
-    background: var(--manual-signal);
+    background: var(--manual-neon);
     box-shadow: none;
 }
 
@@ -185,8 +188,8 @@
     padding: 7px 9px;
     opacity: 0;
     visibility: hidden;
-    color: var(--manual-paper);
-    background: var(--manual-ink);
+    color: var(--manual-ink);
+    background: var(--manual-neon);
     border: 0;
     font: 600 8px/1 'IBM Plex Mono', monospace;
     letter-spacing: 0.08em;
@@ -274,6 +277,21 @@
     background: rgba(243, 240, 232, 0.97);
     border: 1px solid var(--manual-paper);
     box-shadow: 11px 11px 0 var(--manual-signal);
+}
+
+.experience-record[data-employer="oracle"] {
+    box-shadow: 11px 11px 0 var(--manual-neon);
+}
+
+.experience-record[data-employer="oracle"] .record-number {
+    color: var(--manual-neon-dark);
+}
+
+.service-history .live-signal,
+.register-status .live-signal,
+.contact-actions .live-signal {
+    background: var(--manual-neon);
+    box-shadow: 0 0 0 5px var(--manual-neon-soft);
 }
 
 .experience-record::before {
@@ -1084,8 +1102,8 @@
 }
 
 .footer-links a:hover {
-    color: var(--manual-signal);
-    text-decoration-color: var(--manual-signal);
+    color: var(--manual-neon);
+    text-decoration-color: var(--manual-neon);
 }
 
 .back-to-top {
@@ -1101,7 +1119,7 @@
     color: var(--manual-paper);
     background: var(--manual-ink);
     border: 1px solid var(--manual-paper);
-    box-shadow: 5px 5px 0 var(--manual-signal);
+    box-shadow: 5px 5px 0 var(--manual-neon);
     font: 600 9px/1 'IBM Plex Mono', monospace;
     cursor: pointer;
     transform: translateY(8px);
@@ -1117,7 +1135,7 @@
 .back-to-top:hover {
     color: var(--manual-ink);
     background: var(--manual-paper);
-    box-shadow: 5px 5px 0 var(--manual-signal);
+    box-shadow: 5px 5px 0 var(--manual-neon);
     transform: translate(-2px, -2px);
 }
 
@@ -1662,19 +1680,19 @@
     padding: 20px 22px;
     color: var(--manual-paper);
     background: var(--manual-ink);
-    border-top: 5px solid var(--manual-pine-inverse);
+    border-top: 5px solid var(--manual-neon);
 }
 
 .inventory-row:hover .inventory-index strong {
-    -webkit-text-stroke-color: var(--manual-pine-inverse);
+    -webkit-text-stroke-color: var(--manual-neon);
 }
 
 .inventory-row:hover .inventory-index span {
-    color: var(--manual-pine-inverse);
+    color: var(--manual-neon);
 }
 
 .inventory-row:hover .inventory-tags li::before {
-    background: var(--manual-pine-inverse);
+    background: var(--manual-neon);
 }
 
 .inventory-footnote span {
@@ -1865,6 +1883,10 @@
     display: none;
 }
 
+.formation-record:last-child .formation-index i {
+    background: var(--manual-neon);
+}
+
 .formation-index span {
     width: 52px;
     height: 52px;
@@ -1937,7 +1959,7 @@
     padding: clamp(28px, 3.5vw, 46px);
     color: var(--manual-paper);
     background: var(--manual-ink);
-    border-top: 6px solid var(--manual-plum-inverse);
+    border-top: 6px solid var(--manual-neon);
 }
 
 .ledger-heading-inverse {
@@ -1997,7 +2019,7 @@
 }
 
 .ledger-footer span {
-    color: var(--manual-plum-inverse);
+    color: var(--manual-neon);
     font: 500 8px/1.2 'IBM Plex Mono', monospace;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -2106,7 +2128,7 @@
     width: 10px;
     height: 10px;
     flex: 0 0 auto;
-    background: var(--manual-signal);
+    background: var(--manual-neon);
     border: 2px solid var(--manual-ink);
     border-radius: 50%;
     box-shadow: 0 0 0 1px var(--manual-paper);
@@ -2116,7 +2138,7 @@
     content: '';
     position: absolute;
     inset: -10px;
-    border: 1px solid var(--manual-signal);
+    border: 1px solid var(--manual-neon);
     border-radius: 50%;
     animation: contact-beacon-pulse 3s ease-out infinite;
 }
@@ -2172,7 +2194,7 @@
 
 .contact-primary:hover {
     color: var(--manual-ink);
-    background: var(--manual-signal);
+    background: var(--manual-neon);
     transform: translateY(-3px);
 }
 
@@ -2207,7 +2229,7 @@
 
 .contact-primary-value i,
 .contact-phone > i {
-    color: var(--manual-signal);
+    color: var(--manual-neon);
     font-style: normal;
 }
 
@@ -2293,7 +2315,7 @@
     width: 48px;
     height: 48px;
     color: var(--manual-ink);
-    background: var(--manual-signal);
+    background: var(--manual-neon);
     border: 1px solid var(--manual-paper);
 }
 
@@ -2307,7 +2329,7 @@
 }
 
 .contact-signal .channel-card .channel-arrow {
-    color: var(--manual-signal);
+    color: var(--manual-neon);
 }
 
 .contact-actions {

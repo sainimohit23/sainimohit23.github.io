@@ -12,6 +12,8 @@
     --cover-line: #c9c4b8;
     --cover-signal: #e64b2e;
     --cover-signal-soft: #ffd1c7;
+    --cover-neon: #b8e84a;
+    --cover-neon-soft: rgba(184, 232, 74, 0.24);
     --cover-focus: #0066ff;
 }
 
@@ -96,6 +98,7 @@ body::after {
 }
 
 .nav-monogram {
+    position: relative;
     width: 35px;
     height: 35px;
     display: grid;
@@ -104,6 +107,17 @@ body::after {
     background: var(--cover-ink);
     font: 600 11px/1 'IBM Plex Mono', monospace;
     letter-spacing: -0.08em;
+}
+
+.nav-monogram::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 9px;
+    height: 9px;
+    background: var(--cover-neon);
+    border: 2px solid var(--cover-paper);
 }
 
 .nav-identity {
@@ -173,6 +187,10 @@ body::after {
 
 .portfolio-nav .nav-links a[data-section="background"] {
     --nav-accent: var(--manual-plum, #704058);
+}
+
+.portfolio-nav .nav-links a[data-section="save-point"] {
+    --nav-accent: var(--cover-neon);
 }
 
 .portfolio-nav .nav-links a:hover,
@@ -303,9 +321,9 @@ body::after {
     width: 10px;
     height: 10px;
     flex: 0 0 auto;
-    background: var(--cover-signal);
+    background: var(--cover-neon);
     border-radius: 50%;
-    box-shadow: 0 0 0 5px var(--cover-signal-soft);
+    box-shadow: 0 0 0 5px var(--cover-neon-soft);
 }
 
 .cover-title {
@@ -361,9 +379,10 @@ body::after {
     color: var(--cover-paper);
     background: var(--cover-ink);
     border: 1px solid var(--cover-ink);
+    box-shadow: 4px 4px 0 var(--cover-neon);
     font: 700 13px/1 'Manrope', system-ui, sans-serif;
     text-decoration: none;
-    transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+    transition: color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .cover-button span {
@@ -373,7 +392,8 @@ body::after {
 
 .cover-button:hover {
     color: var(--cover-ink);
-    background: transparent;
+    background: var(--cover-neon);
+    box-shadow: 0 0 0 var(--cover-neon);
     transform: translateY(-2px);
 }
 
@@ -498,6 +518,7 @@ body::after {
 .cover-tag-current {
     top: 12%;
     left: -30px;
+    box-shadow: 7px 7px 0 var(--cover-neon);
 }
 
 .cover-tag-index {
@@ -589,7 +610,7 @@ body::after {
 }
 
 .trace-proof strong {
-    color: var(--cover-signal-soft);
+    color: var(--cover-neon);
 }
 
 .cover-hero a:focus-visible,
