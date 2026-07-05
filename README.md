@@ -1,3 +1,3 @@
 # sainimohit23.github.io
 
-Work In Progress
+Source for Mohit Saini's personal portfolio, published with GitHub Pages.
